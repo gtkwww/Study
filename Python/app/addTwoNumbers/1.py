@@ -23,8 +23,9 @@ class Solution(object):
                 v2 = l2.val
                 l2 = l2.next
             carry, val = divmod(v1 + v2 + carry, 10)
-            tmp.val = val
-            tmp.next = ListNode(0)
-        return data
+            tmp.next = ListNode(val)
+            tmp = tmp.next
+        return data.next
+
 
 
