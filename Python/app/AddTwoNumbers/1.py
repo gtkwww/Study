@@ -26,6 +26,3 @@ class Solution(object):
             tmp.next = ListNode(val)
             tmp = tmp.next
         return data.next
-
-
-
